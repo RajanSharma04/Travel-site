@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Patua One", serif !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+p,
+span,
+div {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-item:after{
+    content: '';
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: black;
+    height: 1.5px;
+    width: 0;
+    transition: all 0.4s linear;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+}
