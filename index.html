@@ -60,7 +60,7 @@
   </header>
   <!-- End Header -->
   <!-- Slideshow -->
-  <section class="slideshow">
+  <section class="slideshow relative">
     <div class="slideshow-slider slideshow_wrapper cursor-pointer">
       <div class="slide-item">
         <div class="image_wrapper">
@@ -73,6 +73,53 @@
         </div>
       </div>
     </div>
+    <div class="content_form_wrapper">
+      <div class="content_wrapper">
+        <h1 class=" text-5xl text-gray-600">
+          Your <span class="text-blue-950 font-bold">Journey</span> Begins
+        </h1>
+        <p class="mt-5 text-white text-lg w-2/4">
+          A journey of a 1000 miles starts with a single step. Import the full demo content with 1 click and create a
+          head-turning website for your travel agency.
+        </p>
+      </div>
+
+      <div class="form_tabs">
+        <div class="tab flex justify-center items-center gap-16 py-4 px-5">
+          <button class="tablinks text-white text-lg font-bold" onclick="openCity(event, 'London')">Flights</button>
+          <button class="tablinks text-white text-lg font-bold" onclick="openCity(event, 'Paris')">Hotels</button>
+          <button class="tablinks text-white text-lg font-bold" onclick="openCity(event, 'Tokyo')">Homestays & Villas</button>
+        </div>
+        <div class="tab_content">
+          <div id="London" class="tabcontent bg-white px-7 py-5 rounded-lg">
+            <form class="flex justify-evenly" action="" method="post">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Where to?">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="When">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Travel Type">
+              <button class="px-2 py-3 w-32 rounded-full bg-blue-950 text-white text-sm hover:bg-white hover:text-black hover:border border-black" type="submit">Book Now</button>
+            </form>
+          </div>
+
+          <div id="Paris" class="tabcontent bg-white px-7 py-5 rounded-lg">
+            <form class="flex justify-evenly" action="" method="post">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Where">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Room Type">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Persons">
+              <button class="px-2 py-3 w-32 rounded-full bg-blue-950 text-white text-sm hover:bg-white hover:text-black hover:border border-black" type="submit">Search</button>
+            </form>
+          </div>
+
+          <div id="Tokyo" class="tabcontent bg-white px-7 py-5 rounded-lg">
+            <form class="flex justify-evenly" action="" method="post">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Where to?">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="When">
+              <input class=" bg-gray-400 px-4 py-2 rounded-full placeholder:text-gray-200" type="text" placeholder="Travel Type">
+              <button class="px-2 py-3 w-32 rounded-full bg-blue-950 text-white text-sm hover:bg-white hover:text-black hover:border border-black" type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Slideshow -->
   <!-- Offer section -->
@@ -82,32 +129,32 @@
         <h2 class="text-4xl text-gray-800 font-bold">Best Offer</h2>
       </div>
       <div class="offer_wraper pt-10">
-         <div class="inner_wrapper grid grid-cols-3 gap-8">
-             <div class="item_wrapper">
-               <div class="image_wrapper">
-                  <img src="Assets\Images\offer_section\image-1.png" alt="" srcset="">
-               </div>
-               <div class="content_wrapper">
-                 <h4 class="mt-3 text-base text-center text-blue-950">Australia Trip</h4>
-               </div>
-             </div>
-             <div class="item_wrapper">
-              <div class="image_wrapper">
-                 <img src="Assets\Images\offer_section\image-2.png" alt="" srcset="">
-              </div>
-              <div class="content_wrapper">
-                <h4 class="mt-3 text-base text-center text-blue-950">USA Trip</h4>
-              </div>
+        <div class="inner_wrapper grid grid-cols-3 gap-8">
+          <div class="item_wrapper">
+            <div class="image_wrapper">
+              <img src="Assets\Images\offer_section\image-1.png" alt="" srcset="">
             </div>
-            <div class="item_wrapper">
-              <div class="image_wrapper">
-                 <img src="Assets\Images\offer_section\image-3.png" alt="" srcset="">
-              </div>
-              <div class="content_wrapper">
-                <h4 class="mt-3 text-base text-center text-blue-950">Japan Trip</h4>
-              </div>
+            <div class="content_wrapper">
+              <h4 class="mt-3 text-base text-center text-blue-950">Australia Trip</h4>
             </div>
-         </div>
+          </div>
+          <div class="item_wrapper">
+            <div class="image_wrapper">
+              <img src="Assets\Images\offer_section\image-2.png" alt="" srcset="">
+            </div>
+            <div class="content_wrapper">
+              <h4 class="mt-3 text-base text-center text-blue-950">USA Trip</h4>
+            </div>
+          </div>
+          <div class="item_wrapper">
+            <div class="image_wrapper">
+              <img src="Assets\Images\offer_section\image-3.png" alt="" srcset="">
+            </div>
+            <div class="content_wrapper">
+              <h4 class="mt-3 text-base text-center text-blue-950">Japan Trip</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
