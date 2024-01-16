@@ -44,7 +44,7 @@ div {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #cd8b24;
   height: 1.5px;
   width: 0;
   transition: all 0.4s linear;
